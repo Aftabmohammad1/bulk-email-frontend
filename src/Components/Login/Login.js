@@ -48,11 +48,12 @@ const Login = () => {
           navigate("/")
         }
         })
-        .catch((err)=>{
+        .catch((err)=>{ 
+          console.log(err)
           setButtonStatus(true)
-          if(err.response.status === 401){
+          if(err?.response?.status === 401){
             errorToast("Invalid Credentials")
-          }else if(err.response.status === 406){
+          }else if(err?.response?.status === 406){
             toastWarn("Check your mail and click the verification link then try again")
           }
         })

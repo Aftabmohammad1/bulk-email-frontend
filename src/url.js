@@ -1,4 +1,4 @@
-const API = "https://bulk-email-tool-git-main-deepakkumar2205.vercel.app"
-//  const API = "http://localhost:4000"
+//const API = "https://bulk-email-frontend-aftabmohammad1.vercel.app/users"
+ const API = "http://localhost:4000/users"
 
  export default API

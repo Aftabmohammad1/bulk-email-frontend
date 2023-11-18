@@ -3,7 +3,7 @@ import API from "../url"
 
 export const singUpAxios =  (values)=>{
   return axios({
-        url:`${API}/users/signup`,
+        url:`${API}/signup`,
         method:"post",
         data:values
       })
@@ -41,7 +41,7 @@ export const changePassAxios =  (data , string)=>{
 
 export const loginAxios =  (data)=>{
   return axios({
-        url:`${API}/users/login`,
+        url:`${API}/login`,
         method:"post",
         data:data
       })
