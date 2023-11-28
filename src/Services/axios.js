@@ -82,7 +82,7 @@ export const getCredential =  ()=>{
 
 export const sendEmailToRecepiantAxios =  (data)=>{
   return axios({
-        url:`${API}/email/sendEmails`,
+        url:`http://localhost:4000/email/sendEmails`,
         method:"post",
         headers:{
           "x-auth-token":localStorage.getItem("x-Auth-token"),
@@ -105,7 +105,7 @@ export const deleteCredentials =  ()=>{
 
 export const getLogDetails =  ()=>{
   return axios({
-        url:`${API}/email/getLogDetailsData`,
+        url:`http://localhost:4000/email/getLogDetailsData`,
         method:"get",
         headers:{
           "x-auth-token":localStorage.getItem("x-Auth-token"),
