@@ -11,7 +11,7 @@ export const singUpAxios =  (values)=>{
 
 export const verifyEmailAxios =  (params)=>{
   return axios({
-        url:`${API}/users/verifyemail/${params}`,
+        url:`${API}/verifyemail/${params}`,
         method:"get"
       })
 }
@@ -26,14 +26,14 @@ export const passResetAxios =  (data)=>{
 
 export const checkString =  (data)=>{
   return axios({
-        url:`${API}/users/resetpassword/${data}`,
+        url:`${API}/resetpassword/${data}`,
         method:"get"
       })
 }
 
 export const changePassAxios =  (data , string)=>{
   return axios({
-        url:`${API}/users/changepassword/${string}`,
+        url:`${API}/changepassword/${string}`,
         method:"post",
         data:data
       })
@@ -49,7 +49,7 @@ export const loginAxios =  (data)=>{
 
 export const verifyTokenAxios =  (data)=>{
   return axios({
-        url:`${API}/users/verifyToken`,
+        url:`${API}/verifyToken`,
         method:"get",
         headers:{
           "x-auth-token":localStorage.getItem("x-Auth-token")
