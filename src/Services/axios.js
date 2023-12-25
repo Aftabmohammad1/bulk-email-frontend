@@ -18,7 +18,7 @@ export const verifyEmailAxios =  (params)=>{
 
 export const passResetAxios =  (data)=>{
   return axios({
-        url:`${API}/users/resetpassword`,
+        url:`${API}/resetpassword`,
         method:"post",
         data:data
       })
